@@ -1,0 +1,11 @@
+2022-03-07 18:15:32 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.14.1 on Dors with PID 41156 (/home/cecilia/Documents/GitHub/microservices-demo/twitter-to-kafka-service/target/classes started by cecilia in /home/cecilia/Documents/GitHub/microservices-demo)
+2022-03-07 18:15:32 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2022-03-07 18:15:33 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.994 seconds (JVM running for 1.602)
+2022-03-07 18:15:33 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts
+2022-03-07 18:15:33 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2022-03-07 18:20:15 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.14.1 on Dors with PID 41620 (/home/cecilia/Documents/GitHub/microservices-demo/twitter-to-kafka-service/target/classes started by cecilia in /home/cecilia/Documents/GitHub/microservices-demo)
+2022-03-07 18:20:15 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2022-03-07 18:20:15 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.056 seconds (JVM running for 1.656)
+2022-03-07 18:20:15 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts
+2022-03-07 18:20:15 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2022-03-07 18:20:15 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Hello, world]
