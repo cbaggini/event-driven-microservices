@@ -1,5 +1,14 @@
 # Spin up kafka
-docker-compose -f common.yml -f kafka_cluster.yml up
+docker-compose -f common.yml -f kafka_cluster.yml -f services.yml up
+or docker-compose up
 
 # List running Kafka brokers
 kafkacat -L -b localhost:19092
+
+# Consume kafka messages
+kafkacat -C -b localhost:19092 -t twitter-topic
+
+mvn install -DskipTests
+
+# docker kill all
+docker stop $(docker ps -a -q)
