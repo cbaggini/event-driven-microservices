@@ -1,0 +1,5 @@
+# Spin up kafka
+docker-compose -f common.yml -f kafka_cluster.yml up
+
+# List running Kafka brokers
+kafkacat -L -b localhost:19092
