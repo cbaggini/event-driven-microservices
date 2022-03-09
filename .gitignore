@@ -34,3 +34,4 @@ build/
 
 ### properties ###
 twitter4j.properties
+!**/logs/**
