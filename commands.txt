@@ -8,10 +8,13 @@ kafkacat -L -b localhost:19092
 # Consume kafka messages
 kafkacat -C -b localhost:19092 -t twitter-topic
 
-mvn install -DskipTests
+mvn clean install -DskipTests
 
 # docker kill all
 docker stop $(docker ps -a -q)
 
 # docker remove all containers
 docker rm -f $(docker ps -a -q)
+
+# connect to container shell
+docker exec -it <container-id> /bin/bash

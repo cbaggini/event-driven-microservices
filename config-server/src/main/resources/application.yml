@@ -1,0 +1,28 @@
+server:
+  port: 8888
+
+logging:
+  level:
+    ROOT: INFO
+    org.spring.framework.cloud.config: DEBUG
+
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/cbaggini/spring-cloud-config-server-repository
+          default-label: main
+          username: cbaggini
+          password: '${GITHUB_TOKEN}'
+          clone-on-start: true
+    fail-fast: true
+  security:
+    user:
+      name: spring_cloud_user
+      password: '${USER_PASSWORD}'
+
+log:
+  app-name: config-server

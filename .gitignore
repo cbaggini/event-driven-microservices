@@ -35,3 +35,4 @@ build/
 ### properties ###
 twitter4j.properties
 **/logs/**
+**/docker-logs/**
