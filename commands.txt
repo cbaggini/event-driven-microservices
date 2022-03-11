@@ -1,5 +1,5 @@
 # Spin up kafka
-docker-compose -f common.yml -f kafka_cluster.yml -f services.yml up
+docker-compose -f common.yml -f kafka_cluster.yml -f elastic_cluster.yml -f services.yml up
 or docker-compose up
 
 # List running Kafka brokers
