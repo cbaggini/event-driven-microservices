@@ -13,5 +13,11 @@ elastic-config:
   socket-timeout-ms: 30000
   is-repository: true
 
+user-config:
+  username: spring_cloud_user
+  password: '${USER_PASSWORD}'
+  roles: USER
+
 elastic-query-service:
   version: 1
+
