@@ -8,6 +8,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
+import javax.validation.constraints.NotEmpty;
 import java.util.List;
 
 @RestController
@@ -30,14 +32,14 @@ public class ElasticDocumentController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<ElasticQueryServiceResponseModel> getDocumentById(@PathVariable String id) {
+    public ResponseEntity<ElasticQueryServiceResponseModel> getDocumentById(@PathVariable @NotEmpty String id) {
         ElasticQueryServiceResponseModel response = elasticQueryService.getDocumentById(id);
         LOG.debug("Elasticsearch returned document with id {}", id);
         return ResponseEntity.ok(response);
     }
 
     @PostMapping("/get-document-by-text")
-    public ResponseEntity<List<ElasticQueryServiceResponseModel>> getDocumentByText(@RequestBody ElasticQueryServiceRequestModel request) {
+    public ResponseEntity<List<ElasticQueryServiceResponseModel>> getDocumentByText(@RequestBody @Valid ElasticQueryServiceRequestModel request) {
         List<ElasticQueryServiceResponseModel> response = elasticQueryService.getDocumentByText(request.getText());
         LOG.info("Elasticsearch returned {} documents", response.size());
         return ResponseEntity.ok(response);
