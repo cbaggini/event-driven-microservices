@@ -4,7 +4,7 @@ server:
     context-path: /elastic-query-web-client
 
 elastic-query-web-client:
-  webclient:
+  web-client:
     connect-timeout-ms: 10000
     read-timeout-ms: 10000
     write-timeout-ms: 10000
