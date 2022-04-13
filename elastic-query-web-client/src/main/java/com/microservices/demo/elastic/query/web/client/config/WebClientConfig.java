@@ -23,8 +23,8 @@ public class WebClientConfig {
     private final ElasticQueryWebClientConfigData.WebClient elasticQueryWebClientConfigData;
     private final UserConfigData userConfigData;
 
-    public WebClientConfig(ElasticQueryWebClientConfigData.WebClient elasticQueryWebClientConfigData, UserConfigData userConfigData) {
-        this.elasticQueryWebClientConfigData = elasticQueryWebClientConfigData;
+    public WebClientConfig(ElasticQueryWebClientConfigData elasticQueryWebClientConfigData, UserConfigData userConfigData) {
+        this.elasticQueryWebClientConfigData = elasticQueryWebClientConfigData.getWebClient();
         this.userConfigData = userConfigData;
     }
 
